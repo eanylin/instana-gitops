@@ -1,0 +1,11 @@
+---
+- name: Hello World
+  hosts: localhost
+  gather_facts: no
+
+  tasks:
+    - debug:
+        msg: "Hello World!"
+
+    - name: sleep 120
+      command: sleep 120
